@@ -52,8 +52,33 @@
 
 
   /* Add your hero section styles here */
-  
+  .heroSection{
+    background-color:orange;
+    color:white;
+    height:150px;
+    text-align: center;
+    padding:25px;
+    margin:25px;
+  }
+  .btn{
+    color:orange;
+    background-color:white;
+    align-items: center;
+    padding:10px 20px;
+    height:50px;
+    border:none;
+    border-radius: 5px;
+    
+    font-weight: bold;
+    text-decoration-line: none;
+  }
+  .heroSection p{
+    margin-bottom: 8px;
+  }
   /* Add your about section styles here */
+  .aboutSection{
+    text-align: center;
+  }
 
   /* Add your projects section styles here */
 
@@ -62,3 +87,10 @@
   /* Add your footer styles here */
 
   /* Add your responsive design styles here */
+    
+  
+    
+
+
+    
+
