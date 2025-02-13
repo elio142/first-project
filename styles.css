@@ -76,11 +76,33 @@
     margin-bottom: 8px;
   }
   /* Add your about section styles here */
-  .aboutSection{
+  #about{
     text-align: center;
+    margin-bottom:30px;
   }
 
   /* Add your projects section styles here */
+  #projects {
+    text-align: center;
+    padding: 15px;
+  }
+  .multipleProjects {
+   display: flex;
+   justify-content: center;
+   gap:20px;
+   padding:20px;
+  }
+  .multipleProjects div{
+    background-color: #f1f1f1;
+    padding: 15px 20px; 
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 230px; 
+    font-size: 14px;
+  }
+    
+  
 
   /* Add your contact form styles here */
 
