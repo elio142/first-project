@@ -1,77 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <!-- Add your header with navigation here -->
-  <header>
-    <h3>MyPortfolio</h3>
-    <nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <h3>MyPortfolio</h3>
+      <nav>
         <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-    </nav>
-</header>
+      </nav>
+    </header>
 
+    <main>
+      <!-- Hero Section -->
+      <div class="heroSection">
+        <h3>Welcome to My Portfolio</h3>
+        <p>I'm a passionate developer exploring the world of code.</p>
+        <a href="#projects" class="btn">View Projects</a>
+      </div>
 
-  <main>
-    <!-- Add your hero section here -->
-    <div class="heroSection">
-      
-          <h3>Welcome to My Portfolio</h3>
-          <p>I'm a passionate developer exploring the world of code.</p>
-          <a href="#projects" class="btn">View Projects</a>
-      
-  </div>
+      <!-- About Section -->
+      <div id="about">
+        <h3>About Me</h3>
+        <p>
+          Hello! I'm a web developer with a love for building creative and
+          user-friendly websites. With a strong foundation in HTML, CSS, and
+          JavaScript, I aim to create engaging online experiences.
+        </p>
+      </div>
 
-
-    <!-- Add your about section here -->
-    <div id="about">
-      <h3>About Me</h3>
-      <p>Hello! I'm a web developper with a love for building cerative and user-friendly websites. With a strong fondation in HTML,CSS, and javascript, i aim to create engaging online experiences</p>
-     </div>
-     
-
-    <!-- Add your projects section here -->
-    <div id="projects">
-      <h3>My Projects</h3>
-      <div class="multipleProjects">
-        <div>
-          <h4>Project 1</h4>
-          <P>Descrption of the first project</P>
-        </div>
-  
-        <div>
-          <h4>Project 2</h4>
-          <P>Descrption of the second project</P>
-        </div>
-  
-        <div>
-          <h4>Project 3</h4>
-          <P>Descrption of the third project</P>
+      <!-- Projects Section -->
+      <div id="projects">
+        <h3>My Projects</h3>
+        <div class="multipleProjects">
+          
         </div>
       </div>
-    </div>
 
+      <!-- Testimonials Section -->
+      <div class="wpSay">
+        <h2>What People Say</h2>
 
-     
-    <!-- Add your contact form section here -->
-     
-  </main>
+        <!-- Testimonial 1 -->
+        <div class="slider active">
+          <img
+            class="testimonial-image"
+            src="https://source.unsplash.com/100x100/?woman,portrait"
+            alt="Jane Doe"
+          />
+          <p class="best">"This is the best service I have ever used."</p>
+          <p class="name">- Jane Doe</p>
+        </div>
 
-  <!-- Add your footer here -->
- 
-  <script src="index.js"></script>
-</body>
+        <!-- Testimonial 2 -->
+        <div class="slider">
+          <img
+            class="testimonial-image"
+            src="https://source.unsplash.com/100x100/?man,portrait"
+            alt="John Smith"
+          />
+          <p class="best">
+            "The customer service is outstanding! Highly recommend."
+          </p>
+          <p class="name">- John Smith</p>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="slider">
+          <img
+            class="testimonial-image"
+            src="https://source.unsplash.com/100x100/?person,portrait"
+            alt="Emily Johnson"
+          />
+          <p class="best">
+            "A seamless experience from start to finish. Will use again!"
+          </p>
+          <p class="name">- Emily Johnson</p>
+        </div>
+      </div>
+      <!-- Closing div for .wpSay -->
+
+      <!-- Contact Form Section -->
+      <div id="contact">
+        <h3>Contact Me</h3>
+        <form
+          class="contact-form"
+          action="javascript:void(0)"
+          method="POST"
+          id="myForm"
+        >
+          <div class="inputs">
+            <input
+              type="text"
+              id="name"
+              placeholder="Your Name"
+              autocomplete="on"
+              required
+            />
+            <input
+              type="email"
+              id="email"
+              placeholder="Your Email"
+              autocomplete="on"
+              required
+            />
+            <textarea
+              id="message"
+              placeholder="Your Message"
+              required
+            ></textarea>
+            <button>Send</button>
+          </div>
+        </form>
+        <p
+          class="success-message"
+          style="display: none; color: green; font-weight: bold"
+        ></p>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2025 MyPortfolio. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
 </html>
-      
-      
-      
-
-    
